@@ -1,2 +1,2 @@
-"This is FileA" 
+"This is FileA - version 2" 
 Added a new line to the file as modification
