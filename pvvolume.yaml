@@ -1,0 +1,14 @@
+piVersion: v1
+kind: PersistentVolume
+metadata:
+  name: task-pv-volume
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    path: "/nfsshare/images"
+    server: 169.47.92.206
+  persistentVolumeReclaimPolicy: Retain
